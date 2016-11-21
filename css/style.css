@@ -1,0 +1,378 @@
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Times New Roman", serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+/*             HEADER        HEADER         */
+header {
+  background-image: url("header-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header nav {
+  padding-top: 20px;
+}
+
+header nav .menu {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+header nav .menu img, header nav .menu h5 {
+  display: inline-block;
+}
+
+header nav .menu img {
+  max-width: 55px;
+}
+
+header nav .logo {
+  text-align: center;
+}
+
+header nav .buttons {
+  padding-top: 15px;
+  padding-right: 20px;
+}
+
+header nav .buttons li {
+  padding-left: 10px;
+}
+
+header nav .buttons a {
+  border: 2px solid #000;
+  color: #000000;
+  border-radius: 30px;
+  padding: 3px 10px;
+}
+
+header .header-front {
+  padding-top: 70px;
+}
+
+header .header-front h1 {
+  padding-bottom: 40px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+header .header-front img {
+  padding-bottom: 25px;
+}
+
+header .header-front .image-front {
+  max-width: 900px;
+  width: 100%;
+}
+
+header .header-front h4 {
+  color: #ffffff;
+}
+
+/*             SECTION ONE      SECTION ONE         */
+.section-one {
+  padding-bottom: 100px;
+}
+
+.section-one .content-top h2:nth-child(1) {
+  padding-top: 40px;
+}
+
+.section-one .content-top h2:nth-child(2) {
+  margin-top: 0px;
+  padding-bottom: 30px;
+  color: #bfbfb2;
+}
+
+.section-one .content-top p {
+  padding-bottom: 110px;
+}
+
+.section-one .content-bottom {
+  border: 2px solid #bfbfb2;
+}
+
+.section-one .content-bottom img {
+  max-width: 110px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.section-one .content-bottom h4 {
+  padding-bottom: 50px;
+  color: #bfbfb2;
+}
+
+.section-one .content-bottom.right {
+  position: relative;
+}
+
+.section-one .content-bottom.right .image-cloud {
+  position: relative;
+  top: -55px;
+  background-color: #ffffff;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.section-one .content-bottom.right img {
+  padding: 0px;
+}
+
+.section-one .content-bottom.right h4 {
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.section-one .content-bottom.right p {
+  padding-bottom: 35px;
+  line-height: 25px;
+}
+
+/*             SECTION TWO    SECTION TWO         */
+.section-two .row-1 {
+  background-color: #f7f7f7;
+}
+
+.section-two .row-1 img, .section-two .row-2 img {
+  padding: 50px 0;
+}
+
+.section-two .row-1 h3, .section-two .row-2 h3 {
+  font-weight: bolder;
+}
+
+.section-two .row-1 h3:nth-child(1), .section-two .row-2 h3:nth-child(1) {
+  padding-top: 150px;
+  margin-bottom: 5px;
+}
+
+.section-two .row-1 h3:nth-child(2), .section-two .row-2 h3:nth-child(2) {
+  margin-top: 0px;
+  padding-bottom: 30px;
+}
+
+.section-two .row-2 img {
+  padding-bottom: 150px;
+}
+
+/*             SECTION THREE    SECTION THREE         */
+.section-three .container-fluid {
+  background-color: #f7f7f7;
+}
+
+.section-three img {
+  padding-top: 80px;
+}
+
+.section-three .carousel-indicators {
+  margin-bottom: -70px;
+}
+
+.section-three .carousel-indicators li {
+  border: 1px solid #bfbfb2;
+  margin-left: 5px;
+}
+
+.section-three .carousel-indicators .active {
+  background-color: #bfbfb2;
+}
+
+.section-three .carousel-control {
+  background-image: none;
+}
+
+.section-three .carousel-control .arrow-right, .section-three .carousel-control .arrow-left {
+  position: absolute;
+  top: 40%;
+}
+
+.section-three h4 {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+
+.section-three p {
+  padding-bottom: 50px;
+}
+
+/*             SECTION FOUR    SECTION FOUR       */
+.section-four {
+  padding: 75px 0;
+}
+
+.section-four .content {
+  border: 2px solid #bfbfb2;
+  padding: 40px;
+}
+
+.section-four .content p {
+  font-size: 2.5rem;
+  color: #bfbfb2;
+}
+
+.section-four .content h6 {
+  font-size: 1.6rem;
+}
+
+.section-four .content img {
+  padding: 20px 0;
+}
+
+/*             SUB-FOOTER        SUB-FOOTER       */
+.sub-footer {
+  background-color: #6ebee3;
+  padding: 50px 0;
+}
+
+.sub-footer h2 {
+  font-weight: bolder;
+  padding-bottom: 40px;
+}
+
+.sub-footer h2 span {
+  color: #ffffff;
+}
+
+.sub-footer h4, .sub-footer h5 {
+  font-weight: bold;
+}
+
+.sub-footer h5 {
+  background-color: #ffffff;
+  width: 150px;
+  margin: 0 auto;
+  padding: 7px 7px;
+  border: 2px solid #000000;
+  border-radius: 50px;
+}
+
+.sub-footer h5.scheudle {
+  width: 100px;
+}
+
+/*             FOOTER                FOOTER       */
+.footer {
+  background-color: #eeeee8;
+  padding: 50px 0;
+}
+
+.footer h6 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.footer h6:nth-of-type(2n+2) {
+  padding-top: 30px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer ul li a:hover {
+  color: #bfbfb2;
+}
+
+.footer img {
+  padding: 5px 0;
+}
+
+.footer button {
+  background-color: #eeeee8;
+  border: 2px solid #6ebee3;
+  border-radius: 50px;
+  color: #6ebee3;
+  padding: 3px 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footer button:hover {
+  background-color: #ddddd8;
+}
+
+.footer address {
+  line-height: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.footer .locations {
+  color: #6ebee3;
+  text-decoration: none;
+}
+
+.footer .locations:hover {
+  color: #bfbfb2;
+}
+
+/*             BASE-FOOTER                BASE-FOOTER       */
+.base-footer ul {
+  list-style: none;
+  padding: 50px 0;
+  margin: 0;
+}
+
+.base-footer ul li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.base-footer ul li a {
+  text-decoration: none;
+  color: #bfbfb2;
+}
+
+.base-footer ul li a:hover {
+  color: #000000;
+}
+
+.base-footer h6 {
+  padding: 40px 0;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=maps/style.css.map */
