@@ -80,11 +80,11 @@ var topPosition2 = $("#section-two-part-2").offset().top;
 $(window).on("scroll", function(event) {
   var scrolling = $(document).scrollTop()+$(window).height();
 
-  if (scrolling  > topPosition1 + 200) {
+  if (scrolling  > topPosition1 + 400) {
       $(".section-two-part-1-content").fadeIn(1000);
   }
 
-  if (scrolling > topPosition2 + 200) {
+  if (scrolling > topPosition2 + 400) {
       $(".section-two-part-2-content").fadeIn(1000);
   }
 
