@@ -84,18 +84,18 @@ $(document).ready(function() {
   $(window).on("scroll resize", function(event) {
     var scrolling = $(document).scrollTop()+$(window).height();
 
-    if ((window.matchMedia("(min-width: 991px)").matches) && scrolling  > topPosition1 + 500) {
-        $part1.fadeIn(1000);
+    if (window.matchMedia("(max-width: 991px)").matches) {
+        $part1.show();
     }
-    else {
-      $part1.show();
+    else if (scrolling  > topPosition1 + 500) {
+      $part1.fadeIn(1000);
     }
 
-    if ((window.matchMedia("(min-width: 991px)").matches) && scrolling > topPosition2 + 500) {
-        $part2.fadeIn(1000);
+    if (window.matchMedia("(max-width: 991px)").matches) {
+        $part2.show();
     }
-    else {
-      $part2.show();
+    else if (scrolling  > topPosition2 + 500) {
+      $part2.fadeIn(1000);
     }
   });
 
