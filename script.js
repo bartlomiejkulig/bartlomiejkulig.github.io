@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     $('html, body').animate({
     scrollTop: $("#section-one").offset().top
-  }, 300);
+  }, 800);
 
   });
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     $('html, body').animate({
     scrollTop: $("#section-two").offset().top
-  }, 400);
+  }, 800);
 
   });
 
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     $('html, body').animate({
     scrollTop: $("#section-three").offset().top
-  }, 500);
+  }, 800);
 
   });
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     $('html, body').animate({
     scrollTop: $("#section-four").offset().top
-  }, 600);
+  }, 800);
 
   });
 
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
     $('html, body').animate({
     scrollTop: $("#sub-footer").offset().top
-  }, 700);
+  }, 800);
 
   });
 
@@ -75,23 +75,17 @@ $(document).ready(function() {
 
 $(".section-two-part-1-content").hide();
 $(".section-two-part-2-content").hide();
-
+var topPosition1 = $("#section-two-part-1").offset().top;
+var topPosition2 = $("#section-two-part-2").offset().top;
 $(window).on("scroll", function(event) {
+  var scrolling = $(document).scrollTop()+$(window).height();
 
-  var topPosition1 = $("#section-two-part-1").offset().top;
-  var topPosition2 = $("#section-two-part-2").offset().top;
-
-  var scrolling = $(document).scrollTop();
-
-
-  if (scrolling  > topPosition1 - 500) {
+  if (scrolling  > topPosition1 + 200) {
       $(".section-two-part-1-content").fadeIn(1000);
-      event.preventDefault();
   }
 
-  if (scrolling > topPosition2 - 500) {
+  if (scrolling > topPosition2 + 200) {
       $(".section-two-part-2-content").fadeIn(1000);
-      event.preventDefault();
   }
 
 });

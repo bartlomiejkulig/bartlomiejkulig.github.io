@@ -53,8 +53,12 @@ header {
   background-repeat: no-repeat;
   background-position: 50%;
   nav {
+    .container-fluid {
+      height: 0;
+    }
     .menu-content {
-      display: none;
+      height: 0;
+      opacity: 0;
     }
 
     .menu {
@@ -106,6 +110,32 @@ header {
     .buttons {
       padding-top: 60px;
       padding-right: 20px;
+      .modal-content {
+        .modal-header h2 {
+          text-align: center;
+        }
+        .modal-body {
+          padding-top:  50px;
+          padding-bottom: 50px;
+          input {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+          }
+          input:first-of-type {
+            margin-bottom: 10px;
+          }
+          input[type="submit"] {
+            margin-top: 10px;
+            background-color: $grey;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 5px 10px;
+          }
+        }
+      }
       .button {
         border: 2px solid $black;
         border-radius: 50px;
@@ -120,6 +150,19 @@ header {
         }
         a:hover {
           color: $white;
+        }
+        .dropdown-menu {
+          min-width: 100%;
+          padding: 0px;
+          left:-7px;
+          img {
+            max-width: 40px;
+          }
+          a {
+            padding: 10px 10px;
+            padding-top: 10px;
+
+          }
         }
       }
     }
@@ -156,6 +199,8 @@ header {
   }
   nav.menu-opened {
     .menu-content {
+    opacity: 1;
+    transition: opacity 1s;
     display: block;
     position: absolute;
     left: 0;
@@ -252,7 +297,7 @@ header {
 /*             SECTION TWO    SECTION TWO         */
 
 .section-two {
-  .row-1 {
+  .container-fluid:first-of-type {
     background-color: $background-grey;
   }
   .row-1, .row-2 {
@@ -457,11 +502,16 @@ header {
 @media screen and (max-width: 1099px) {
   header nav
   .buttons {
+    max-height: 116px;
     padding-top: 0px;
     .button {
       float: none;
       text-align: center;
       margin-bottom: 10px;
+      .dropdown-menu {
+        left: -5px;
+        min-width: 108%;
+      }
     }
     .button:first-child {
       margin-top: 50px;

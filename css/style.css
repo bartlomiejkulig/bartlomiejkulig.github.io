@@ -43,8 +43,13 @@ header {
   background-position: 50%;
 }
 
+header nav .container-fluid {
+  height: 0;
+}
+
 header nav .menu-content {
-  display: none;
+  height: 0;
+  opacity: 0;
 }
 
 header nav .menu {
@@ -102,6 +107,35 @@ header nav .buttons {
   padding-right: 20px;
 }
 
+header nav .buttons .modal-content .modal-header h2 {
+  text-align: center;
+}
+
+header nav .buttons .modal-content .modal-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+header nav .buttons .modal-content .modal-body input {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+header nav .buttons .modal-content .modal-body input:first-of-type {
+  margin-bottom: 10px;
+}
+
+header nav .buttons .modal-content .modal-body input[type="submit"] {
+  margin-top: 10px;
+  background-color: #bfbfb2;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
 header nav .buttons .button {
   border: 2px solid #000000;
   border-radius: 50px;
@@ -119,6 +153,21 @@ header nav .buttons .button a {
 
 header nav .buttons .button a:hover {
   color: #ffffff;
+}
+
+header nav .buttons .button .dropdown-menu {
+  min-width: 100%;
+  padding: 0px;
+  left: -7px;
+}
+
+header nav .buttons .button .dropdown-menu img {
+  max-width: 40px;
+}
+
+header nav .buttons .button .dropdown-menu a {
+  padding: 10px 10px;
+  padding-top: 10px;
 }
 
 header .header-front {
@@ -157,6 +206,8 @@ header .header-front .image-arrow {
 }
 
 header nav.menu-opened .menu-content {
+  opacity: 1;
+  transition: opacity 1s;
   display: block;
   position: absolute;
   left: 0;
@@ -257,7 +308,7 @@ header nav.menu-opened .menu-content li:hover {
 }
 
 /*             SECTION TWO    SECTION TWO         */
-.section-two .row-1 {
+.section-two .container-fluid:first-of-type {
   background-color: #f7f7f7;
 }
 
@@ -485,6 +536,7 @@ header nav.menu-opened .menu-content li:hover {
 @media screen and (max-width: 1099px) {
   header nav
 .buttons {
+    max-height: 116px;
     padding-top: 0px;
   }
   header nav
@@ -492,6 +544,11 @@ header nav.menu-opened .menu-content li:hover {
     float: none;
     text-align: center;
     margin-bottom: 10px;
+  }
+  header nav
+.buttons .button .dropdown-menu {
+    left: -5px;
+    min-width: 108%;
   }
   header nav
 .buttons .button:first-child {
