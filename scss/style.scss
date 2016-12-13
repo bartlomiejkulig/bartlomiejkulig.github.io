@@ -110,3 +110,14 @@ button {
   float: right;
   margin-right: 30px;
 }
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 100% !important;
+    height: 100vh;
+  }
+  section {
+    height: 60vh;
+    padding-top: 50px;
+  }
+}
