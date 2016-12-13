@@ -125,9 +125,18 @@ button {
     width: 100% !important;
     height: 100vh;
   }
+  header {
+    height: 30vh;
+  }
+  header .counter-container {
+    text-align: center;
+  }
   section {
-    height: 50vh;
+    height: 55vh;
     padding-top: 50px;
+  }
+  footer {
+    height: 15vh;
   }
 }
 
