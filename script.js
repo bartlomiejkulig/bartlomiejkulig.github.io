@@ -69,8 +69,8 @@ $(function() {
   $textInput.keypress(function(e) {
     if (e.which === 13) {
       $addElement.submit();
+      return false;
     }
-    return false;
   });
 
   // #########################################
