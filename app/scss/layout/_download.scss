@@ -1,0 +1,18 @@
+.download {
+  text-align: center;
+  padding: 100px 0;
+  &__slogan {
+    padding-bottom: 15px;
+  }
+  &__motto {
+    padding-bottom: 45px;
+    font-weight: bold;
+  }
+  &__button {
+    animation-name: button;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+  }
+}

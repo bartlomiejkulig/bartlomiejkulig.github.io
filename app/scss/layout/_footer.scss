@@ -1,0 +1,71 @@
+.footer {
+  width: 100%;
+  background-color: $footer-background-color;
+}
+
+.footer-container {
+  max-width: 1070px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 70px 0 100px;
+  &__element {
+    width: 25%;
+    text-align: center;
+  }
+}
+
+.location, .about-activebox, .share-with-love {
+  &__title {
+    color: $footer-text-title-color;
+  }
+}
+
+
+.location, .about-activebox {
+  &__title {
+    padding-bottom: 20px;
+  }
+}
+
+.location {
+  &__title {
+    padding-bottom: 25px;
+  }
+  &__adress {
+    font-size: 1.4rem;
+    line-height: 22px;
+    color: $footer-text-color;
+  }
+}
+
+.share-with-love {
+  &__title {
+    padding-bottom: 25px;
+  }
+  &__social {
+    margin: 0 auto;
+  }
+}
+
+.about-activebox {
+  &__description {
+    line-height: 22px;
+    color: $footer-text-color;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer-container {
+    padding-bottom: 20px;
+  }
+  .footer-container__element {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .about-activebox {
+    width: 200px;
+    margin: 0 auto;
+  }
+}

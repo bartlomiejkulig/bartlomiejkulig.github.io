@@ -1,0 +1,12 @@
+.sub-footer {
+  width: 100%;
+  background-color: $sub-footer-background-color;
+  text-align: center;
+  padding: 30px 0;
+  &__copyright, &__author {
+    color: $sub-footer-text-color;
+  }
+  &__copyright {
+    padding-bottom: 5px;
+  }
+}

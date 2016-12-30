@@ -1,0 +1,135 @@
+.nav-container {
+  flex-basis: 50%;
+  align-self: center;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: $navigation-link-color;
+  font-size: $nav-link-size;
+  &:hover {
+    color: $navigation-link-color-hover-active;
+  }
+  &--active {
+    color: $navigation-link-color-hover-active;
+    font-weight: bold;
+  }
+}
+
+.menu-button {
+  border: 3px solid $button-color;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: none;
+  background-color: $button-color;
+}
+.menu-button-bar1, .menu-button-bar2, .menu-button-bar3 {
+  position: relative;
+  top: 8px;
+  left: 1px;
+  border-radius: 0px;
+  display: block;
+  background-color: $white;
+  width: 30px;
+  height: 3px;
+  margin: 4px;
+  transition: all 0.25s;
+  transform: translate(0px, 0px) rotate(0deg);
+}
+.animate1 {
+  transition: 0.25s;
+  transform: translate(0px, 7px) rotate(45deg);
+}
+
+.animate2 {
+  transition: 0.25s;
+  opacity: 0;
+}
+
+.animate3 {
+  transition: 0.25s;
+  transform: translate(0px, -8px) rotate(-45deg);
+}
+
+.header.menu-opened .nav {
+  display: block;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.header.menu-opened .nav-container {
+  width: 100%;
+}
+.header.menu-opened .nav__element {
+  padding: 20px;
+  z-index: 200;
+}
+
+.header.menu-opened .menu-button {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+.header.menu-opened .header__top-container.fixed-background .menu-button {
+  top: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+  .nav-container {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-container {
+    padding-right: 50px;
+  }
+  .menu-button {
+    display: block;
+    float: right;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-container {
+    padding-right: 15px;
+  }
+  .header.menu-opened .menu-button {
+    top: 40px;
+    right: 15px;
+  }
+  .menu-button {
+    margin-top: 7px;
+    border: 2px solid $button-color;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+  }
+  .menu-button-bar1, .menu-button-bar2, .menu-button-bar3 {
+    top: 5px;
+    left: 1px;
+    width: 20px;
+    height: 2px;
+    margin: 4px;
+  }
+  .animate1 {
+    transform: translate(0px, 5px) rotate(45deg);
+  }
+  .animate3 {
+    transform: translate(0px, -7px) rotate(-45deg);
+  }
+  .header.menu-opened .header__top-container.fixed-background .menu-button {
+    right: 15px;
+  }
+}

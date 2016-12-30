@@ -1,0 +1,12 @@
+.button {
+  padding: 15px 50px;
+  background-color: $button-color;
+  border: none;
+  color: $button-font-color;
+  font-size: $button-font-size;
+  transition: all 0.1s;
+  &:hover {
+    background-color: $button-hover-color;
+    transform: scale(1.1);
+  }
+}

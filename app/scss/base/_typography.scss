@@ -1,0 +1,48 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+//font-family: 'Cardo', serif;
+h2 {
+  font-size: $h2-font-size;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5,
+h6 {
+  font-size: $h5-h6-font-size;
+}
+
+h5 {
+  font-weight: lighter;
+}
+
+h6 {
+  font-weight: bolder;
+}
+
+p {
+  font-size: $p-font-size;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: $h2-font-size-small;
+  }
+  h4 {
+    font-size: $h4-font-size-small;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "active",
+  "description": "active website",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
+    "slick-carousel": "^1.6.0",
+    "fancyBox": "^2.1.5"
+  }
+}
