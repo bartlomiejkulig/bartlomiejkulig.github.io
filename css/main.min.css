@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a,
+img,
+b, u, i, ol, ul, li,
+article,
+figure, footer, header, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, figcaption, figure,
+footer, header, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #FFF;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #D6DCE8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #D6DCE8;
+  z-index: 2;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #516490;
+  z-index: 2;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  display: none;
+}
+
+.app {
+  border: 4px solid #516490;
+  color: #516490;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.app__city {
+  font-size: 40px;
+  padding: 15px;
+  border-bottom: 4px solid #516490;
+}
+
+.app__latlong {
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+}
+
+.latlong {
+  border-bottom: 4px solid #516490;
+}
+
+.latlong__lat, .latlong__long {
+  width: 50%;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.latlong__lat {
+  border-right: 2px solid #516490;
+}
+
+.latlong__long {
+  border-left: 2px solid #516490;
+}
+
+.date {
+  padding: 10px;
+  border-bottom: 4px solid #516490;
+}
+
+.date__day, .date__hour {
+  font-size: 30px;
+}
+
+.weather {
+  padding: 10px;
+  border-bottom: 4px solid #516490;
+}
+
+.details {
+  padding: 10px;
+  display: -webkit-box;
+  display: flex;
+}
+
+.details__humadity, .details__wind {
+  width: 50%;
+}
+
+.temp-toogle {
+  width: 100%;
+  height: 30px;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  /* Light grey */
+  border-top: 10px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=maps/main.min.css.map */
