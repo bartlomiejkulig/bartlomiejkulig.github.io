@@ -97,13 +97,17 @@ body {
   right: 0;
   background-color: #516490;
   z-index: 2;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
   display: none;
+}
+
+.error p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  line-height: 100vh;
+  text-align: center;
 }
 
 .app {
@@ -213,9 +217,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .app {
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 95vw;
   }
 }
 
