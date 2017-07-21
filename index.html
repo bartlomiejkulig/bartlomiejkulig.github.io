@@ -8,32 +8,28 @@
   </head>
   <body>
     <div class="app">
-      <div class="app__city" id="city">City</div>
-      <div class="app__latlong latlong">
-        <div class="latlong__lat" id="lat">Lat</div>
-        <div class="latlong__long" id="long">Long</div>
+      <img class="app__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Wyszukiwarka Wikipedia">
+      <div class="app__input">
+        <input class="app__input--placeholder" id="input" type="text">
+        <input class="app__input--confirm" id="submit" type="submit">
       </div>
-      <div class="app__date date">
-        <div class="date__day" id="day">15.02.1244</div>
-        <div class="date__hour" id="hour">15:55</div>
+      <div class="app__buttons button">
+        <a href="" class="button__search">Szukaj</a>
+        <a href="https://en.wikipedia.org/wiki/Special:Random" class="button__lottery">Losuj</a>
       </div>
-      <div class="app__weather weather">
-        <img src="#" alt="" class="weather__icon" id="icon">
-        <div class="weather__temperature" id="temperature">23</div>
-        <div class="weather__description" id="description">Partly Sunny</div>
-      </div>
-      <div class="app__details details">
-        <div class="details__humadity" id="humadity">23%</div>
-        <div class="details__wind" id="wind">23 km/h</div>
-      </div>
-      <div class="app__temp-toogle"><button id="temp-toogle" class="temp-toogle">Change temperature unit</button></div>
-      <div class="app__form form">
-        <input type="text" class="form__input" id="input">
-        <input type="submit" class="form__submit " id="submit">
-      </div>
+      <ul class="app__list">
+      </ul>
     </div>
-    <div class="overlay"><div class="loader"></div></div>
-    <div class="error"><p>Something went wrong ...</p></div>
+    <div class="list active">
+      <!--<a class="list__element element">
+        <div class="element__image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt=""></div>
+        <div class="element__description">
+          <h2 class="element__header">Krol Cwel</h2>
+          <p class="element__text">dwd</p>
+        </div>
+      </a>-->
+    </div>
+    <div id="loader"></div>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
