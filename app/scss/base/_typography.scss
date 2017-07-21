@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  font-weight: bolder;
+  color: $h2-color;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+p {
+  font-size: $p-font-size;
+}
+
+a {
+  text-decoration: none;
+}
