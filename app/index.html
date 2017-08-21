@@ -8,28 +8,35 @@
   </head>
   <body>
     <div class="app">
-      <img class="app__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Wyszukiwarka Wikipedia">
-      <div class="app__input">
-        <input class="app__input--placeholder" id="input" type="text">
-        <input class="app__input--confirm" id="submit" type="submit">
-      </div>
-      <div class="app__buttons button">
-        <a href="" class="button__search">Szukaj</a>
-        <a href="https://en.wikipedia.org/wiki/Special:Random" class="button__lottery">Losuj</a>
-      </div>
-      <ul class="app__list">
-      </ul>
-    </div>
-    <div class="list active">
-      <!--<a class="list__element element">
-        <div class="element__image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt=""></div>
-        <div class="element__description">
-          <h2 class="element__header">Krol Cwel</h2>
-          <p class="element__text">dwd</p>
+      <header class="app__header header">
+        <figure class="header__logo"><img src="" alt="" class="logo"></figure>
+        <div class="header__search search">
+          <input placeholder="dodaj strim" id="inputNewStream" type="text" class="search__input">
+          <input id="submitNewStream" type="submit" value="submit" class="search__submit">
         </div>
-      </a>-->
+      </header>
+      <section class="app__refresh">
+        <button id="refresh">refresh</button>
+      </section>
+      <section class="app__filter filter">
+        <button id="all" class="filter__all">all</button>
+        <button id="online" class="filter__online">online</button>
+        <button id="offline" class="filter__offline">offline</button>
+        <div id="loader" class="loader">Loading...</div>
+      </section>
+      <section class="app__streams streams" id="streams">
+        <!--<div class="streams__stream stream online">
+          <div class="stream__logo">
+            <img src="images/logo.png" alt="" class="stream__image">
+          </div>
+          <div class="stream__description">
+            <p class="stream__text"><a href="">dreamhackcs</a>is currently streaming StarCraft2</p>
+            <p class="stream__status">FR vs FR</p>
+            <p class="stream__info">Viwers: 256 FPS: 50</p>
+          </div>
+        </div>-->
+      </section>
     </div>
-    <div id="loader"></div>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
