@@ -6,9 +6,7 @@ var DataModule = (function (AjaxModule, BodyModule, UIModule, AddModule) {
 
   // get promises based on basearray
   function setPromises(baseArray, targetArray) {
-    promises = [];
-    // objectArray = [];
-    for (var i = 0; i < baseArray.length - 1; i++) {
+    for (var i = 0; i < streamsArray.length - 1; i++) {
       promises[i] = AjaxModule.downloadData(i, baseArray, targetArray);
     }
   }
@@ -18,12 +16,17 @@ var DataModule = (function (AjaxModule, BodyModule, UIModule, AddModule) {
     Promise.all(promises).then(callback);
   }
 
-  // get actual list of strems
+  // INIT DOWNLOADING DEFAULT DATA
+  setPromises(streamsArray, objectArray);
+  useDataFromPromises(function () {
+    BodyModule.renderBody(objectArray);
+    BodyModule.hideLoader();
+  });
+
   function getObjectArray() {
     return objectArray;
   }
 
-  // remove stream form list of streams
   function deleteStream(target) {
     DataModule.unsetStream(BodyModule.getStreamIndex(target));
     BodyModule.resetBody();
@@ -31,7 +34,6 @@ var DataModule = (function (AjaxModule, BodyModule, UIModule, AddModule) {
     BodyModule.renderBody(objectArray);
   }
 
-  // refresh actual list of streams
   function refresh() {
     BodyModule.showLoader();
     BodyModule.resetBody();
@@ -42,7 +44,6 @@ var DataModule = (function (AjaxModule, BodyModule, UIModule, AddModule) {
     });
   }
 
-  // get acutal list of strims
   function getActualListOfNames() {
     var baseArray = getObjectArray();
     var array = baseArray.map(function (val) {
@@ -50,23 +51,12 @@ var DataModule = (function (AjaxModule, BodyModule, UIModule, AddModule) {
     });
     return array;
   }
-
-  // set stream to begging of array
   function setStream(stream) {
     objectArray.unshift(stream);
   }
-  // delete stream based on index
   function unsetStream(index) {
     objectArray.splice(index, 1);
-    console.log(objectArray);
   }
-
-  // INIT DOWNLOADING DEFAULT DATA
-  setPromises(streamsArray, objectArray);
-  useDataFromPromises(function () {
-    BodyModule.renderBody(objectArray);
-    BodyModule.hideLoader();
-  });
 
   return {
     getObjectArray: getObjectArray,
